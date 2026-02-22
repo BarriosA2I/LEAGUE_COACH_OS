@@ -272,6 +272,19 @@ def cmd_demo(args):
 
 
 # =============================================================================
+# CHAT BUBBLE MODE
+# =============================================================================
+
+def cmd_chat(args):
+    """Launch the AI chat bubble overlay."""
+    from daemon.chat_bubble import launch_chat_bubble
+    launch_chat_bubble({
+        "anthropic_api_key": os.environ.get("ANTHROPIC_API_KEY"),
+        "port": args.port,
+    })
+
+
+# =============================================================================
 # TEST MODE
 # =============================================================================
 
@@ -300,6 +313,8 @@ def cmd_status(args):
         "pydantic (schema validation)": "pydantic",
         "uvicorn (API server)": "uvicorn",
         "fastapi (API framework)": "fastapi",
+        "numpy (game state detect)": "numpy",
+        "flask (chat bubble server)": "flask",
     }
 
     for name, module in deps.items():
@@ -378,6 +393,10 @@ Examples:
     # test
     p_test = sub.add_parser("test", help="Run integration tests")
 
+    # chat
+    p_chat = sub.add_parser("chat", help="Launch AI chat bubble overlay")
+    p_chat.add_argument("--port", type=int, default=5050, help="Chat server port")
+
     # status
     p_status = sub.add_parser("status", help="Show system status")
 
@@ -389,6 +408,7 @@ Examples:
         "coach": cmd_coach,
         "serve": cmd_serve,
         "demo": cmd_demo,
+        "chat": cmd_chat,
         "test": cmd_test,
         "status": cmd_status,
     }

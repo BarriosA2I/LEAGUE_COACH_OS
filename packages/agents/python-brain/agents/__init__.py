@@ -7,6 +7,7 @@ from agents.coaching_agents import (
     MacroObjectivesCoachAgent,
 )
 from agents.judge import FinalJudgeValidatorAgent
+from agents.live_coaching_agents import LiveCoachingEngine
 
 __all__ = [
     "VisionParserAgent",
@@ -17,4 +18,5 @@ __all__ = [
     "TeamfightCompCoachAgent",
     "MacroObjectivesCoachAgent",
     "FinalJudgeValidatorAgent",
+    "LiveCoachingEngine",
 ]

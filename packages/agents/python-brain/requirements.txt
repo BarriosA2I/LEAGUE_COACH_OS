@@ -5,6 +5,7 @@ anthropic>=0.40.0
 
 # Vision & Image
 Pillow>=10.0.0
+numpy>=1.26.0
 
 # Daemon (Windows)
 keyboard>=0.13.5
@@ -15,6 +16,10 @@ win10toast-click>=0.1.2; sys_platform == "win32"
 # Server (optional)
 fastapi>=0.110.0
 uvicorn>=0.29.0
+flask>=3.0.0
+
+# Chat Bubble (optional)
+pywebview>=5.0
 
 # Notifications (cross-platform fallback)
 plyer>=2.1.0
