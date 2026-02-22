@@ -1,0 +1,24 @@
+# League Coach OS — Dependencies
+# Core
+pydantic>=2.0.0
+anthropic>=0.40.0
+
+# Vision & Image
+Pillow>=10.0.0
+
+# Daemon (Windows)
+keyboard>=0.13.5
+pystray>=0.19.0
+pywin32>=306; sys_platform == "win32"
+win10toast-click>=0.1.2; sys_platform == "win32"
+
+# Server (optional)
+fastapi>=0.110.0
+uvicorn>=0.29.0
+
+# Notifications (cross-platform fallback)
+plyer>=2.1.0
+
+# Testing
+pytest>=8.0.0
+pytest-asyncio>=0.23.0

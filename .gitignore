@@ -8,3 +8,10 @@ fixtures/images/*.png
 fixtures/images/*.jpg
 .turbo/
 coverage/
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+_staging/
