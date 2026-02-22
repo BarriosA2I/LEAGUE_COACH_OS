@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.env
+*.log
+vault/patches/*/raw/
+vault/patches/*/embeddings/
+fixtures/images/*.png
+fixtures/images/*.jpg
+.turbo/
+coverage/

@@ -1,0 +1,39 @@
+{
+  "patch": "16.4.1",
+  "timestamp": "2026-02-22T00:00:00.000Z",
+  "user_champion": "Teemo",
+  "user_role": "top",
+  "blue_team": ["Teemo", "LeeSin", "Syndra", "Jinx", "Thresh"],
+  "red_team": ["Darius", "Elise", "Ahri", "Caitlyn", "Lulu"],
+  "recommended_build": {
+    "starter": ["Doran's Blade", "Health Potion"],
+    "core_items": ["Nashor's Tooth", "Liandry's Torment", "Zhonya's Hourglass"],
+    "boots": "Sorcerer's Shoes",
+    "situational": ["Morellonomicon", "Void Staff", "Banshee's Veil"]
+  },
+  "recommended_runes": {
+    "primary_tree": "Domination",
+    "primary_keystone": "Electrocute",
+    "primary_slots": ["Taste of Blood", "Eyeball Collection", "Ultimate Hunter"],
+    "secondary_tree": "Sorcery",
+    "secondary_slots": ["Manaflow Band", "Scorch"]
+  },
+  "skill_order": {
+    "first_three": ["E", "Q", "W"],
+    "max_order": ["E", "Q", "W"]
+  },
+  "laning_tips": [
+    "Use your range advantage to harass melee champions",
+    "Place mushrooms in river and tri-brush for vision"
+  ],
+  "teamfight_tips": [
+    "Stay on the flank and use mushrooms to zone",
+    "Focus on kiting and applying damage over time"
+  ],
+  "objective_tips": [
+    "Use mushrooms around dragon and baron for area denial",
+    "Split push when team has number advantage"
+  ],
+  "confidence": 0.7,
+  "warnings": ["FAST MODE: generic tag-based build, not matchup-specific"]
+}

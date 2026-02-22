@@ -1,0 +1,26 @@
+{
+  "tag_to_roles": {
+    "Fighter": ["top", "jungle"],
+    "Tank": ["top", "support"],
+    "Mage": ["mid"],
+    "Assassin": ["mid", "jungle"],
+    "Marksman": ["adc"],
+    "Support": ["support"]
+  },
+  "champion_overrides": {
+    "Teemo": ["top"],
+    "Pantheon": ["top", "mid", "support"],
+    "Senna": ["adc", "support"],
+    "Pyke": ["support"],
+    "Brand": ["mid", "support"],
+    "Swain": ["mid", "support", "adc"],
+    "Sett": ["top", "support"],
+    "Gragas": ["top", "jungle", "mid"],
+    "Yone": ["mid", "top"],
+    "Yasuo": ["mid", "top"],
+    "Viego": ["jungle", "mid"],
+    "Graves": ["jungle"],
+    "Kindred": ["jungle"],
+    "Nidalee": ["jungle"]
+  }
+}

@@ -1,0 +1,15 @@
+export { agentRegistry, getAgent, listAgents } from './registry/agent-registry';
+export { visionParserAgent } from './registry/vision-parser';
+export { userContextResolverAgent } from './registry/user-context-resolver';
+export type { UserContextOutput } from './registry/user-context-resolver';
+export { roleInferenceEngineAgent } from './registry/role-inference-engine';
+export type { RoleInferenceOutput } from './registry/role-inference-engine';
+export { canonKnowledgeFetcherAgent } from './registry/canon-knowledge-fetcher';
+export type { CanonKnowledgeOutput } from './registry/canon-knowledge-fetcher';
+export { buildAndRunesPlannerAgent } from './registry/build-and-runes-planner';
+export type { BuildPlannerOutput } from './registry/build-and-runes-planner';
+export { laningMatchupCoachAgent } from './registry/laning-matchup-coach';
+export { teamfightCompCoachAgent } from './registry/teamfight-comp-coach';
+export { macroObjectivesCoachAgent } from './registry/macro-objectives-coach';
+export { finalJudgeValidatorAgent } from './registry/final-judge-validator';
+export type { FinalJudgeOutput } from './registry/final-judge-validator';

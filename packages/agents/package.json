@@ -1,0 +1,15 @@
+{
+  "name": "@league-coach/agents",
+  "version": "1.0.0",
+  "private": true,
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": { "build": "tsc", "test": "vitest run" },
+  "dependencies": {
+    "@league-coach/core": "workspace:*",
+    "@league-coach/knowledge": "workspace:*",
+    "@league-coach/vision": "workspace:*",
+    "zod": "^3.24.0"
+  },
+  "devDependencies": { "typescript": "^5.7.0", "vitest": "^3.0.0" }
+}

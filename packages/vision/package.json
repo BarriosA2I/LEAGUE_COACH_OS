@@ -1,0 +1,14 @@
+{
+  "name": "@league-coach/vision",
+  "version": "1.0.0",
+  "private": true,
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": { "build": "tsc", "test": "vitest run" },
+  "dependencies": {
+    "@league-coach/core": "workspace:*",
+    "sharp": "^0.33.0",
+    "zod": "^3.24.0"
+  },
+  "devDependencies": { "typescript": "^5.7.0", "vitest": "^3.0.0" }
+}

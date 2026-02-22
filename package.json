@@ -1,0 +1,34 @@
+{
+  "name": "league-coach-os",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Multi-agent League of Legends coaching system — Barrios A2I",
+  "author": "Barrios A2I",
+  "license": "MIT",
+  "scripts": {
+    "build": "pnpm -r build",
+    "test": "pnpm -r test",
+    "lint": "eslint 'packages/*/src/**/*.ts' 'scripts/**/*.ts'",
+    "format": "prettier --write 'packages/*/src/**/*.ts' 'scripts/**/*.ts'",
+    "ingest": "tsx scripts/ingest-ddragon.ts",
+    "sentinel": "tsx scripts/patch-sentinel.ts",
+    "dossiers": "tsx scripts/build-dossiers.ts",
+    "index-vault": "tsx scripts/index-vault.ts",
+    "coach": "tsx packages/orchestrator/src/index.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "eslint": "^9.0.0",
+    "prettier": "^3.4.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0",
+    "vitest": "^3.0.0"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": ["esbuild", "sharp"]
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "pnpm": ">=9.0.0"
+  }
+}
